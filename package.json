@@ -1,0 +1,19 @@
+{
+  "name": "taskmanager",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev:server": "cd server && bun run dev",
+    "dev:client": "cd client && bun run dev",
+    "dev": "concurrently \"bun run dev:server\" \"bun run dev:client\"",
+    "install:all": "cd server && npm install && cd ../client && npm install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
